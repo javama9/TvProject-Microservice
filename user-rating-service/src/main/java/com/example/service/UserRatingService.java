@@ -22,9 +22,7 @@ public class UserRatingService {
 		if(movie == null) {
 			throw new RuntimeException("movie id is invalid");
 		}
-		
 		return repository.save(userRating);
 	}
-	
 
 }
