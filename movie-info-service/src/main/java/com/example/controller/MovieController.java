@@ -23,7 +23,7 @@ public class MovieController {
 	
 	private MovieService service;
 	
-	@PostMapping
+	@PostMapping // for testing
 	public ResponseEntity<?> create(@RequestBody Movie movie){
 		return new ResponseEntity (service.create(movie),HttpStatus.CREATED);
 	}

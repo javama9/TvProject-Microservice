@@ -18,6 +18,8 @@ public class Movie {
 	private Long id;
 	private String name;
 	private Date releaseDate;
+	private String description;
+	
 	public Long getId() {
 		return id;
 	}
@@ -36,5 +38,12 @@ public class Movie {
 	public void setReleaseDate(Date releaseDate) {
 		this.releaseDate = releaseDate;
 	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	
 
 }
