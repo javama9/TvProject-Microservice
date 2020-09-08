@@ -28,7 +28,7 @@ public class MovieController {
 		return new ResponseEntity (service.create(movie),HttpStatus.CREATED);
 	}
 	
-	@GetMapping
+	@GetMapping // observe carefully
 	public ResponseEntity<?> getAll() {
 		return new ResponseEntity(service.getAll(), HttpStatus.OK);
 	}
